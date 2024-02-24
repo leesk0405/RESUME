@@ -34,7 +34,8 @@ header nav {
   height: 100%;
   background-color: #fff;
   padding: 16px;
-  transition: all .3s;
+  transition: all .2s;
+  display: block;
 }
 header.active nav {
   left: 0;
@@ -53,6 +54,10 @@ header nav .close_btn {
   background-color: transparent;
   /* background-color: #ddd; */
 }
+header nav .close_btn:active {
+  background-color: #ddd;
+}
+
 header nav .close_btn span {
   display: block;
   width: 31px;

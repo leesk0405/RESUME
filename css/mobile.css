@@ -1,0 +1,38 @@
+header {
+  padding: 16px;
+  padding-bottom: 0;
+  height: 55px;
+  position: relative;
+}
+header .nav_btn {
+  position: absolute;
+  top:0;
+  left:0;
+  border: none;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+}
+header .nav_btn img {
+  width: 24px;
+}
+header nav{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 16px;
+  display: none;
+}
+header nav .gnb {
+  margin-top: 40px;
+  font-weight: 500;
+}
+header nav .gnb li:hover{
+  text-decoration: underline;
+}
+header nav .gnb li:not(:last-child){
+  margin-bottom: 30px;
+} 

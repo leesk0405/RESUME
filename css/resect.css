@@ -22,10 +22,11 @@ ul {
 .fs_1{font-size: 3rem;} /*48*/
 .fs_2{font-size: 2.5rem;}/*40*/
 .fs_3{font-size: 2rem;}/*32*/
-.fs_4{font-size: 1rem;}/*16*/
-.fs_5{font-size: 0.875rem;}/*14*/
-.fs_6{font-size: 0.75rem;}/*12*/
-.fs_7{font-size: 0.625rem;}/*10*/
+.fs_4{font-size: 1.5rem;}/*24*/
+.fs_5{font-size: 1rem;}/*16*/
+.fs_6{font-size: 0.875rem;}/*14*/
+.fs_7{font-size: 0.75rem;}/*12*/
+.fs_8{font-size: 0.625rem;}/*10*/
 /*
 8px = 0.5rem
 9px = 0.5625rem

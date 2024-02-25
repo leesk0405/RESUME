@@ -1,0 +1,99 @@
+@media all and (min-width:1200px){
+  html {
+    font-size: 20px;
+  }
+  .back img{
+    height: unset;;
+  }
+  header {
+    height: 80px;
+    /* background-color: #ddd; */
+  }
+  header .nav_btn {
+    width: 60px;
+    height: 60px
+  }
+  header .nav_btn img {
+    width: 24px;
+  }
+  header nav .close_btn {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:0;
+    left:0;
+    border: none;
+    background-color: transparent;
+    /* background-color: #ddd; */
+  }
+  header nav .close_btn span {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    
+  }
+  .banner {
+    width: 1440px;
+    margin:0 auto;
+    padding: 0;
+  }
+
+  .banner .main_title{
+    margin-top: 2.5rem;/**/
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+  }
+  .banner .main_title .title_1{
+    margin-bottom: 1.5rem;/*24*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .banner .main_title .title_1 .txt{
+    /* font-size: 32px; */
+    font-weight: 700;
+    font-size: 60px;
+    white-space: nowrap;
+    padding-bottom: 12px;
+  }
+  .banner .main_title .title_1 span{
+    /* font-size: 24px; */
+    background-color: #ddd;
+    font-weight: 600;
+    width: fit-content;
+    padding: 4px;
+  }
+  .banner .main_title .title_2{
+    align-self: end;
+  }
+  .banner .main_title .title_2 p{
+    font-size: 1.25rem;/*20*/
+  }
+  header nav {
+    width: 40%;
+    box-shadow: 6px 6px 8px rgba(0, 0,0, .1);
+    padding: 24px;
+  }
+  .banner .con {
+    display: flex;
+    gap: 1.5rem;
+    position: absolute;
+    right:16px;
+    bottom:0;
+  }
+  .banner .con .item {}
+  .banner .con .item .type {}
+  .banner .con .item .box {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #333;
+    position: absolute;
+    top:-20px;
+    left: 50%;
+    transform: translateY(-50%);
+  }
+}

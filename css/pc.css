@@ -51,7 +51,7 @@
     height: 400px;
   }
   .banner .main_title .title_1{
-    margin-bottom: 1.5rem;/*24*/
+    margin-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

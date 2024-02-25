@@ -100,7 +100,6 @@ header nav .gnb li:last-child {
   /* background-color: #ddd; */
   margin-bottom: 30px;
   padding: 16px;
-  padding-bottom: 80px;
   width: 100%;
   position: relative;
 }
@@ -146,4 +145,32 @@ header nav .gnb li:last-child {
 .title {
   font-size:2rem;
   margin-bottom: 16px;
+}
+.row1 {
+  padding: 16px;
+  padding-top: 30px;
+}
+.row1 .title{}
+.row1 .con{}
+.row1 .con .item{
+  padding: 12px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.row1 .con .item .sub{
+  display: flex;
+  gap: 20px;
+}
+.row1 .con .item h4 {
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+}
+.row1 .con .item .sub ul:first-child{
+  font-weight: 500;
+}
+.row1 .con .item .sub ul li {
+  margin-bottom: 4px;
+  color: #666;
 }

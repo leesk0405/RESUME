@@ -1,5 +1,6 @@
 html {
   font-family: "Pretendard";
+  font-size: 16px;
 }
 *{
   margin: 0;
@@ -18,3 +19,37 @@ a {
 ul {
   list-style: none;
 }
+.fs_1{font-size: 3rem;} /*48*/
+.fs_2{font-size: 2.5rem;}/*40*/
+.fs_3{font-size: 2rem;}/*32*/
+.fs_4{font-size: 1rem;}/*16*/
+.fs_5{font-size: 0.875rem;}/*14*/
+.fs_6{font-size: 0.75rem;}/*12*/
+.fs_7{font-size: 0.625rem;}/*10*/
+/*
+8px = 0.5rem
+9px = 0.5625rem
+10px = 0.625rem
+11px = 0.6875rem
+12px = 0.75rem
+13px = 0.8125rem
+14px = 0.875rem
+15px = 0.9375rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+22px = 1.375rem
+24px = 1.5rem
+26px = 1.625rem
+28px = 1.75rem
+30px = 1.875rem
+32px = 2rem
+34px = 2.125rem
+36px = 2.25rem
+38px = 2.375rem
+40px = 2.5rem
+*/
+
+/* mobile : text사이 : 16px/ section사이 : padding-bootom:30px, margin-top:30px */
+/* pc : text사이 -> main-text :32px/ main-text:60px
+/ section 사이 padding-bottom:130*, margin-top:130px*/

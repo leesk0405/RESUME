@@ -14,6 +14,12 @@ header {
   height: 55px;
   position: relative;
 }
+header .con {
+  text-align: right;
+}
+header .con .item {
+  margin-bottom: 10px;
+}
 header .nav_btn {
   position: absolute;
   top:0;
@@ -23,6 +29,7 @@ header .nav_btn {
   width: 55px;
   height: 55px;
   transition: all .2s;
+  z-index: 2;
 }
 header .nav_btn img {
   width: 24px;
@@ -112,37 +119,14 @@ header nav .gnb li:last-child {
 }
 .banner .main_title .title_1 span{
   /* font-size: 24px; */
-  background-color: #ddd;
+  background-color: #f2f2f2;
   font-weight: 600;
+  padding: 2px;
 }
 .banner .main_title .title_2{}
 .banner .main_title .title_2 p{
   font-size: 1.25rem;/*20*/
 }
-.banner .con {  
-  position: absolute;
-  right:16px;
-  bottom: 0;
-  font-size: 12px;
-}
-.banner .con .item {
-  margin-bottom: 12px;
-  text-align: center;
-  position: relative;
-}
-.banner .con .item:last-child {
-  margin-bottom: 0;
-}
-
-/* .banner .con .item:nth-child(1)  .type{
-  color:#f15a22;
-}
-.banner .con .item:nth-child(2) .type {
-  color:#ffcc00;
-}
-.banner .con .item:nth-child(3) .type {
-  color: #1428a0;
-} */
 .banner .con .item:first-child .box {
 
   width: 10px;
@@ -158,4 +142,8 @@ header nav .gnb li:last-child {
 }
 .banner .con .item.active .type {
 
+}
+.title {
+  font-size:2rem;
+  margin-bottom: 16px;
 }

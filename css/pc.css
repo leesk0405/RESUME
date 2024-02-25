@@ -3,7 +3,8 @@
     font-size: 20px;
   }
   .back img{
-    height: unset;;
+    height: unset;
+    /* display: none; */
   }
   header {
     height: 80px;
@@ -15,6 +16,7 @@
   }
   header .nav_btn img {
     width: 24px;
+
   }
   header nav .close_btn {
     width: 60px;
@@ -36,9 +38,10 @@
     
   }
   .banner {
-    width: 1440px;
-    margin:0 auto;
-    padding: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
   }
 
   .banner .main_title{
@@ -62,13 +65,13 @@
   }
   .banner .main_title .title_1 span{
     /* font-size: 24px; */
-    background-color: #ddd;
     font-weight: 600;
     width: fit-content;
-    padding: 4px;
+
   }
   .banner .main_title .title_2{
     align-self: end;
+    margin-right: 120px;
   }
   .banner .main_title .title_2 p{
     font-size: 1.25rem;/*20*/
@@ -77,23 +80,5 @@
     width: 40%;
     box-shadow: 6px 6px 8px rgba(0, 0,0, .1);
     padding: 24px;
-  }
-  .banner .con {
-    display: flex;
-    gap: 1.5rem;
-    position: absolute;
-    right:16px;
-    bottom:0;
-  }
-  .banner .con .item {}
-  .banner .con .item .type {}
-  .banner .con .item .box {
-    width: 10px;
-    height: 10px;
-    border: 1px solid #333;
-    position: absolute;
-    top:-20px;
-    left: 50%;
-    transform: translateY(-50%);
   }
 }

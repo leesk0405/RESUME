@@ -98,7 +98,7 @@ header nav .gnb li:last-child {
 }
 .banner {
   /* background-color: #ddd; */
-  margin-bottom: 30px;
+ margin-bottom: 60px;
   padding: 16px;
   width: 100%;
   position: relative;
@@ -108,13 +108,13 @@ header nav .gnb li:last-child {
   width: 100%;
 }
 .banner .main_title .title_1{
-  margin-bottom: 1.5rem;/*24*/
+  margin-bottom: 2.5rem;/*24*/
 }
 .banner .main_title .title_1 .txt{
   /* font-size: 32px; */
   font-weight: 700;
   white-space: nowrap;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
 }
 .banner .main_title .title_1 span{
   /* font-size: 24px; */
@@ -169,7 +169,7 @@ header nav .gnb li:last-child {
 }
 .row1 .con .item h4 {
   margin-bottom: 8px;
-  font-size: 1.125rem;
+  font-size: 18px;
 }
 .row1 .con .item .sub ul:first-child{
   font-weight: 500;
@@ -177,11 +177,15 @@ header nav .gnb li:last-child {
 .row1 .con .item .sub ul li {
   margin-bottom: 4px;
   color: #666;
+  font-size: 0.875rem;/*14*/
+
 }
+/* row1 */
 .row2 {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 30px;
+  margin-bottom: 30px;
 }
 .row2 .con {
   display: flex;
@@ -189,9 +193,9 @@ header nav .gnb li:last-child {
   flex-wrap: wrap;
 }
 .row2 .con .item{
-  width: calc(50% - 16px );
+  width: calc(25% - 16px );
   aspect-ratio: 1/1;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   background-color: #f2f2f2;
   border-radius: 8px;
 }
@@ -208,7 +212,7 @@ header nav .gnb li:last-child {
   justify-content: center;
 }
 .row2 .con .item a img{
-  width:60%;
+  width:50%;
   vertical-align: top;
   transition: all .2s;
 
@@ -216,3 +220,62 @@ header nav .gnb li:last-child {
 .row2 .con .item:last-child a img {
   width: 80%;
 }
+/* row2 */
+.row3 {
+  padding: 16px;
+  padding-top: 30px;
+}
+.row3 .con {}
+.row3 .con .item {
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.row3 .con .item .txt {
+  position: absolute;
+  top:50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 2;
+}
+.row3 .con .item .txt h4 {
+  font-size: 22px;
+}
+.row3 .con .item .txt  span {}
+.row3 .con .item .pic{
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+  /* backdrop-filter: brightness(0.5); */
+}
+.row3 .con .item .pic::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #333;
+  opacity: 0.6;
+}
+.row3 .con .item .pic a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.row3 .con .item:first-child .pic{
+  background-image: url(../img/ja_thum.png);
+}
+.row3 .con .item:nth-child(2) .pic{
+  background-image: url(../img/kb_thum.png);
+}
+.row3 .con .item:last-child .pic{
+  background-image: url(../img/bs_thum.png);
+}
+

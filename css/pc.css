@@ -8,19 +8,20 @@
   }
   header {
     height: 80px;
+    /* padding: 32px; */
     /* background-color: #ddd; */
   }
   header .nav_btn {
-    width: 60px;
-    height: 60px
+    width: 80px;
+    height: 80px
   }
   header .nav_btn img {
-    width: 24px;
+    width: 32px;
 
   }
   header nav .close_btn {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     position: absolute;
     top:0;
     left:0;
@@ -30,25 +31,24 @@
   }
   header nav .close_btn span {
     display: block;
-    width: 32px;
+    width: 40px;
     height: 3px;
     background-color: #333;
     border-radius: 5px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
   }
   .banner {
     max-width: 1440px;
     margin: 0 auto;
-    margin-left: 12.5vw;
-    margin-right: 12.5vw;
+    margin-bottom: 130px;
+    /* height: 100vh; */
   }
 
   .banner .main_title{
-    margin-top: 2.5rem;/**/
+    margin-top: 6rem;/**/
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    height: 500px;
   }
   .banner .main_title .title_1{
     margin-bottom: 0;
@@ -80,5 +80,66 @@
     width: 40%;
     box-shadow: 6px 6px 8px rgba(0, 0,0, .1);
     padding: 24px;
+  }
+  .title {
+    font-size:2.5rem;
+    margin-bottom: 32px;
+  }
+  .row1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 130px;
+    margin-bottom: 130px;
+  }
+  .row1 .title{}
+  .row1 .con{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 26px;
+  }
+  .row1 .con .item{
+    padding:0;
+    background-color: unset;
+    color: #333;
+    margin-bottom: 0;
+  }
+
+  .row1 .con .item h4 {
+    margin-bottom: 20px;
+    font-size: 1.125rem;
+  }
+  .row1 .con .item .sub ul li {
+    line-height: 1.6;
+  }
+  .row2 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 130px;
+  }
+  .row2 .con {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .row2 .con .item{
+    width: calc(25% - 68px );
+    margin-bottom: 68px;
+  }
+  /* .row2 .con .item:hover img {
+    transform: scale(1.2);
+  }
+  .row2 .con .item:last-child {
+    margin-bottom: 0;
+  } */
+
+  .row2 .con .item a img{
+    width:40%;
+    vertical-align: top;
+    transition: all .2s;
   }
 }

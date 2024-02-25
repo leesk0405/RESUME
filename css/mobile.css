@@ -127,7 +127,6 @@ header nav .gnb li:last-child {
   font-size: 1.25rem;/*20*/
 }
 .banner .con .item:first-child .box {
-
   width: 10px;
   height: 10px;
   border: 1px solid #333;
@@ -148,7 +147,9 @@ header nav .gnb li:last-child {
 }
 .row1 {
   padding: 16px;
+  padding-bottom: 0;
   padding-top: 30px;
+  margin-bottom: 30px;
 }
 .row1 .title{}
 .row1 .con{}
@@ -158,6 +159,9 @@ header nav .gnb li:last-child {
   border-radius: 8px;
   margin-bottom: 20px;
   color: #333;
+}
+.row1 .con .item:last-child {
+  margin-bottom: 0;
 }
 .row1 .con .item .sub{
   display: flex;
@@ -173,4 +177,42 @@ header nav .gnb li:last-child {
 .row1 .con .item .sub ul li {
   margin-bottom: 4px;
   color: #666;
+}
+.row2 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 30px;
+}
+.row2 .con {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row2 .con .item{
+  width: calc(50% - 16px );
+  aspect-ratio: 1/1;
+  margin-bottom: 16px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+/* .row2 .con .item:hover img {
+  transform: scale(1.2);
+}
+.row2 .con .item:last-child {
+  margin-bottom: 0;
+} */
+.row2 .con .item a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.row2 .con .item a img{
+  width:60%;
+  vertical-align: top;
+  transition: all .2s;
+
+}
+.row2 .con .item:last-child a img {
+  width: 80%;
 }

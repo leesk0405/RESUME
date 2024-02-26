@@ -234,14 +234,15 @@ header nav .gnb li:last-child {
 .row3 .con .item .txt {
   position: absolute;
   top:50%;
-  left: 20px;
+  left: 1.5rem;
   transform: translateY(-50%);
   color: #fff;
   z-index: 2;
 }
-.row3 .con .item .txt h4 {
-  font-size: 22px;
+.row3 .con .item .txt span {
+  color: #f4f4f4;
 }
+
 .row3 .con .item .txt  span {}
 .row3 .con .item .pic{
   width: 100%;
@@ -249,7 +250,6 @@ header nav .gnb li:last-child {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
- 
   /* backdrop-filter: brightness(0.5); */
 }
 .row3 .con .item .pic a {

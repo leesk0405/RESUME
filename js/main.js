@@ -10,3 +10,10 @@ $('header nav .close_btn').click(function(){
 //   $('.item .type').show();
 //   $(this).parent('.item').childern('.type').attr('data-aos', 'flip-up');
 // })
+$('.row2 .con .item').click(function(){
+    let i = $(this).index();
+    $('.pop').eq(i).show().siblings().hide();
+});
+$('.pop .head button').click(function(){
+  $('.pop').hide();
+})

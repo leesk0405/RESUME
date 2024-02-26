@@ -198,24 +198,22 @@ header nav .gnb li:last-child {
   margin-bottom: 32px;
   background-color: #f2f2f2;
   border-radius: 8px;
-}
-/* .row2 .con .item:hover img {
-  transform: scale(1.2);
-}
-.row2 .con .item:last-child {
-  margin-bottom: 0;
-} */
-.row2 .con .item a {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-.row2 .con .item a img{
+.row2 .con .item:hover img {
+  transform: scale(1.2);
+}
+.row2 .con .item:last-child {
+  margin-bottom: 0;
+}
+.row2 .con .item img{
   width:50%;
   vertical-align: top;
   transition: all .2s;
-
 }
 .row2 .con .item:last-child a img {
   width: 80%;
@@ -254,7 +252,12 @@ header nav .gnb li:last-child {
  
   /* backdrop-filter: brightness(0.5); */
 }
-.row3 .con .item .pic::after {
+.row3 .con .item .pic a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.row3 .con .item .pic a::before {
   content: "";
   display: block;
   width: 100%;
@@ -265,18 +268,74 @@ header nav .gnb li:last-child {
   background-color: #333;
   opacity: 0.6;
 }
-.row3 .con .item .pic a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+
 .row3 .con .item:first-child .pic{
   background-image: url(../img/JEJU_thum_02.jpg);
+  background-position: center 30%;
 }
 .row3 .con .item:nth-child(2) .pic{
-  background-image: url(../img/kb_thum.png);
+  background-image: url(../img/KB_thum_02.jpg);
+  background-position: center 34%;
 }
 .row3 .con .item:last-child .pic{
   background-image: url(../img/BS_thum_02.jpg);
+}
+/* row3 */
+.row4 {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 30px;
+}
+
+
+
+
+.pop {
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  width:300px;/*300px*/
+  /* height: 300px;*/
+  height: auto;
+  padding: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  z-index: 99;
+  display: none;
+}
+.pop .head{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2px;
+ 
+}
+.pop .head span{
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.pop .head button {
+  background-color: transparent;
+  border: none;
+}
+.pop .head button img{
+  width: 90%;
+}
+.pop .pic{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.pop .pic {}
+.pop .pic img{
+  width: 100%;
+}
+.pop  .info{
+  text-align: center;
+  margin-top: 12px;
+  /* font-size: 16px; */
 }
 

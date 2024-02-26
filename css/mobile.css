@@ -156,7 +156,7 @@ header nav .gnb li:last-child {
 .row1 .con .item{
   padding: 12px;
   background-color: #f2f2f2;
-  border-radius: 8px;
+  border-radius: 4px;
   margin-bottom: 20px;
   color: #333;
 }
@@ -229,7 +229,7 @@ header nav .gnb li:last-child {
 .row3 .con .item {
   margin-bottom: 30px;
   position: relative;
-  border-radius: 8px;
+  border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -250,6 +250,7 @@ header nav .gnb li:last-child {
   height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
  
   /* backdrop-filter: brightness(0.5); */
 }
@@ -270,12 +271,12 @@ header nav .gnb li:last-child {
   height: 100%;
 }
 .row3 .con .item:first-child .pic{
-  background-image: url(../img/ja_thum.png);
+  background-image: url(../img/JEJU_thum_02.jpg);
 }
 .row3 .con .item:nth-child(2) .pic{
   background-image: url(../img/kb_thum.png);
 }
 .row3 .con .item:last-child .pic{
-  background-image: url(../img/bs_thum.png);
+  background-image: url(../img/BS_thum_02.jpg);
 }
 

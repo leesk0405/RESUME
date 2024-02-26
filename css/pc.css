@@ -127,8 +127,8 @@
     flex-wrap: wrap;
   }
   .row2 .con .item{
-    width: calc(25% - 68px );
-    margin-bottom: 68px;
+    width: calc(25% - 24px );
+    margin-bottom: 24px;
   }
   /* .row2 .con .item:hover img {
     transform: scale(1.2);

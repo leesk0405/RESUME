@@ -117,7 +117,7 @@ header nav .gnb li:last-child {
   white-space: nowrap;
   padding-bottom: 16px;
   width: 100%;
-  /* font-size: 1.625rem; */
+  font-size: 1.625rem;
   /* font-size: 26px; */
 }
 .banner .main_title .title_1 span{
@@ -290,6 +290,27 @@ header nav .gnb li:last-child {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 30px;
+}
+.row4 .con {}
+.row4 .con .item{
+  column-count: 2;
+  /* column-gap: 20px; */
+}
+.row4 .con .item li{
+  width: 100%;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.row4 .con .item li img{
+  width: 100%;
+}
+.row4 .con .item li p{
+  text-align: center;
+  font-size: 0.75rem;/*12*/
+  /* font-size: 0.875rem;14 */
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 

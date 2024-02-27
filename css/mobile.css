@@ -296,7 +296,7 @@ header nav .gnb li:last-child {
 }
 .row4 .con {}
 .row4 .con .item{
-  column-count: 3;
+  column-count: 2;
   /* column-gap: 20px; */
 }
 .row4 .con .item li{

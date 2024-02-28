@@ -202,7 +202,6 @@
          </div><!--item-->
       </div><!--con-->
     </div><!--row3-->
-
     <div class="row4">
       <h3 class="title">GRAPHIC DESIGN</h3><!--title-->
       <div class="con">
@@ -250,10 +249,41 @@
         <li>
           <p>부산 순수365 공모전</p>
           <img src="./img/365.jpg" alt="">
+		  <div class="txt">laskdalskdjalskjalksjdal laksjd laksjdla ks</div>
         </li><!--9th li-->
       </ul><!--item-->
       </div><!--con-->
     </div><!--row4-->
+	<style>
+		.viewMore{
+			position: fixed;
+			top: 0; left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000000aa;
+			display: none;
+			justify-content: center;
+			align-items: center;
+		}
+		.viewMore .wrap{
+			max-width: 1320px;
+			width: 100%;
+			max-height: calc(100vh - 100px);
+			overflow-y: scroll;
+			/* background-color: #ddd; */
+			text-align: center;
+		}
+		.viewMore .wrap img{
+			max-width: 100%;
+		}
+	</style>
+    <div class="viewMore">
+		<div class="wrap">
+			<!-- <div class="tit"></div> -->
+			<!-- <div class="description"></div> -->
+			<!-- <img src="" alt=""> -->
+		</div>
+	</div>
   </section>
   <footer>
     <div class="foot_inner">
@@ -385,5 +415,37 @@
   </script>
   <script src="./js/jquery-3.7.1.min.js"></script>
   <script src="./js/main.js"></script>
+  <script>
+		$(".row4 li").on("click", function() {
+			$(".viewMore").css("display", "flex");
+			const url = $(this).find("img").attr("src");
+			const alt = $(this).find("img").attr("alt");
+			const tit = $(this).find("p").text();
+			const desc = $(this).find(".txt").text();
+			
+			const innerComp = `
+				<div class="tit">${tit}</div>
+				<div class="desc">${desc}</div>
+				<img src="${url}" alt="${alt}">
+			`;
+			console.log(innerComp);
+
+			$(".viewMore .wrap").html(innerComp);
+		});
+
+		$(".viewMore").on("click", function() {
+			$(this).css('display', "none");
+		});
+
+		// $(".viewMore .wrap").on("click", function(e) {
+		// 	e.stopPropagation();
+		// 	// event capturing을 방지
+		// });
+
+		// `` => 템플릿리터럴
+		// `문자열 표현o 표현식 표현에 유용함. 줄바꿈 표현에 유연함`
+		// "이름 : " + userName + " 님"
+		// `이름 : ${userName} 님`
+  </script>
 </body>
 </html>

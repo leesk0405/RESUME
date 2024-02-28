@@ -301,8 +301,8 @@ header nav .gnb li:last-child {
 }
 .row4 .con .item li{
   width: 100%;
-  /* height: 120px; */
-  /* overflow: hidden; */
+  max-height: 140px;
+  overflow: hidden;
   break-inside: avoid;
   margin-bottom: 20px;
   cursor: pointer;

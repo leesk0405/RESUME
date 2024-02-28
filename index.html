@@ -273,15 +273,23 @@
 			/* background-color: #ddd; */
 			text-align: center;
 		}
+		.viewMore .wrap .tit{
+			color: #fff;
+			font-weight: bold;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
 		.viewMore .wrap img{
 			max-width: 100%;
 		}
+
 	</style>
     <div class="viewMore">
 		<div class="wrap">
 			<!-- <div class="tit"></div> -->
 			<!-- <div class="description"></div> -->
 			<!-- <img src="" alt=""> -->
+			<p></p>
 		</div>
 	</div>
   </section>
@@ -421,6 +429,7 @@
 			const url = $(this).find("img").attr("src");
 			const alt = $(this).find("img").attr("alt");
 			const tit = $(this).find("p").text();
+
 			const desc = $(this).find(".txt").text();
 			
 			const innerComp = `

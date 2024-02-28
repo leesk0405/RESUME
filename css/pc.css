@@ -164,7 +164,7 @@
     height: 200px;
   }
   .row4 {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     padding-left: 0px;
     padding-right: 0px;
@@ -177,6 +177,7 @@
   }
   .row4 .con .item li{
     margin-bottom: 40px;
+    max-height: 400px;
   }
   .row4 .con .item li p{
     font-size: 0.75rem;/*12*/

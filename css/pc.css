@@ -172,7 +172,7 @@
     margin-bottom: 130px;
   }
   .row4 .con .item{
-    column-count: 4;
+    column-count: 3;
     /* column-gap: 20px; */
   }
   .row4 .con .item li{

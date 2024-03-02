@@ -405,7 +405,7 @@ footer .foot_inner .txt {
 footer .foot_inner .ex {
   display: flex;
   justify-content:center;
-  font-size: 16px;
+  font-size: 18px;
 }
 footer .foot_inner ul:first-child{
  padding-right: 28px;

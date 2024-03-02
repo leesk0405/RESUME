@@ -201,4 +201,31 @@
   .pop {
     width: 500px;
   }
+  footer .foot_inner {
+    padding: 0;
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  footer .foot_inner .txt {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  footer .foot_inner .ex {
+    display: flex;
+    justify-content:center;
+    font-size: 32px;
+  }
+  footer .foot_inner ul:first-child{
+   padding-right: 28px;
+   font-weight: 600;
+  }
+  footer .foot_inner ul li {
+    margin-bottom: 16px;
+   
+  }
+  footer .foot_inner ul:last-child li {
+    text-align: right;
+  }
 }

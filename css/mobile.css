@@ -386,6 +386,40 @@ header nav .gnb li:last-child {
    justify-content: center;
 }
 
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .foot_inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+footer .foot_inner .txt {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer .foot_inner .ex {
+  display: flex;
+  justify-content:center;
+  font-size: 20px;
+}
+footer .foot_inner ul:first-child{
+ padding-right: 28px;
+ font-weight: 600;
+}
+footer .foot_inner ul li {
+  margin-bottom: 6px;
+}
+footer .foot_inner ul:last-child {
+  margin: 0;
+}
+footer .foot_inner ul:last-child li {
+  text-align: right;
+}
 
 .pop {
   position: fixed;

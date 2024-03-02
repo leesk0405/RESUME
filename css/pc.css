@@ -185,8 +185,19 @@
     font-weight: 500;
   }
 
-
-
+  .viewMore .wrap{
+    max-width: 1300px;
+    margin: 0 40px;
+  }
+  .viewMore .btn {
+    margin-top: 18px;
+    width: 220px;
+    height: 64px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+ 
   .pop {
     width: 500px;
   }

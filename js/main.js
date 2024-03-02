@@ -16,4 +16,37 @@ $('.row2 .con .item').click(function(){
 });
 $('.pop .head button').click(function(){
   $('.pop').hide();
-})
+});
+
+$(".row4 li").on("click", function() {
+  $(".viewMore").css("display", "flex");
+  const url = $(this).find("img").attr("src");
+  const alt = $(this).find("img").attr("alt");
+  const tit = $(this).find("p").text();
+  const redirection = $(this).attr("data-redirection");
+
+  const desc = $(this).find(".txt").text();
+  
+  const innerComp = `
+    <div class="tit">${tit}</div>
+    <div class="desc">${desc}</div>
+    <img src="${url}" alt="${alt}">
+    ${redirection ? `<div class="btn"><a href="${redirection}" target="_blank">바로가기</a></div>` : ""}
+  `;
+
+  $(".viewMore .wrap").html(innerComp);
+});
+
+$(".viewMore").on("click", function() {
+  $(this).css('display', "none");
+});
+		// $(".viewMore .wrap").on("click", function(e) {
+		// 	e.stopPropagation();
+		// 	// event capturing을 방지
+		// });
+
+		// `` => 템플릿리터럴
+		// `문자열 표현o 표현식 표현에 유용함. 줄바꿈 표현에 유연함`
+		// "이름 : " + userName + " 님"
+		// `이름 : ${userName} 님`s
+

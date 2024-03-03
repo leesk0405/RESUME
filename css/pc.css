@@ -8,6 +8,7 @@
   }
   header {
     height: 80px;
+    /* background-color: transparent; */
     /* padding: 32px; */
     /* background-color: #ddd; */
   }
@@ -36,11 +37,11 @@
     background-color: #333;
     border-radius: 5px;
     margin: 0 auto;  
-  }
+  } 
   .banner {
-    margin-top: 80px;
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 80px;
     margin-bottom: 130px;
     /* height: 100vh; */
   }

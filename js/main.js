@@ -1,9 +1,21 @@
 $('header .nav_btn').click(function(){
+  // $('nav').is(':hidden') ? $('nav').show() : $('nav').hide();
   $('header').addClass('active');
 });
 $('header nav .close_btn').click(function(){
   $('header').removeClass('active');
-})
+});
+
+$('nav .gnb li').on("click",function(){
+  let i = $(this).index();
+  let off = $('section').children('div').eq(i).offset().top
+
+  $('html,body').animate({
+    scrollTop: off
+  },1000);
+  // $('nav').addClass('active');
+  $('header').removeClass('active');
+});
 
 // $('.item .box').click(function(){
 //   $(this).parent('.item').toggleClass('active');

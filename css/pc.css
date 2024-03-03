@@ -38,6 +38,7 @@
     margin: 0 auto;  
   }
   .banner {
+    margin-top: 80px;
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 130px;
@@ -205,16 +206,18 @@
     padding: 0;
     padding-top: 130px;
     padding-bottom: 130px;
+    max-width: 600px;
+    margin: 0 auto;
   }
   footer .foot_inner .txt {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 52px;
     text-align: center;
   }
   footer .foot_inner .ex {
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     font-size: 32px;
   }
   footer .foot_inner ul:first-child{
@@ -222,8 +225,10 @@
    font-weight: 600;
   }
   footer .foot_inner ul li {
-    margin-bottom: 16px;
-   
+    margin-bottom: 32px;
+  }
+  footer .foot_inner ul li:last-child {
+    margin: 0;
   }
   footer .foot_inner ul:last-child li {
     text-align: right;

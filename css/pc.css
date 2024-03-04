@@ -90,6 +90,7 @@
   .row1 {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0;
     padding-top: 130px;
     margin-bottom: 130px;
   }
@@ -157,7 +158,10 @@
     padding-top: 130px;
     margin-bottom: 130px;
   }
-  .row3 .con {}
+  .row3 .con {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .row3 .con .item {
     border-radius: 8px;
     margin-bottom: 45px;

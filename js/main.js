@@ -11,8 +11,8 @@ $('nav .gnb li').on("click",function(){
   let off = $('section').children('div').eq(i).offset().top
 
   $('html,body').animate({
-    scrollTop: off
-  },1000);
+    scrollTop: off - 50
+  },300);
   // $('nav').addClass('active');
   $('header').removeClass('active');
 });

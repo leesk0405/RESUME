@@ -229,6 +229,9 @@
    padding-right: 28px;
    font-weight: 600;
   }
+  footer .foot_inner ul:first-child li {
+    padding-left: 52px;
+  }
   footer .foot_inner ul li {
     margin-bottom: 32px;
   }

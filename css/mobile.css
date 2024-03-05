@@ -417,13 +417,29 @@ footer .foot_inner .ex {
   justify-content:center;
   font-size: 18px;
 }
-footer .foot_inner ul:first-child{
+footer .foot_inner ul:first-child {
  padding-right: 28px;
  font-weight: 600;
+}
+footer .foot_inner ul:first-child li {
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 32px;
 }
 footer .foot_inner ul li {
   margin-bottom: 12px;
 }
+footer .foot_inner ul .git {
+  background-image: url(../img/git2.png);
+}
+footer .foot_inner ul .phone {
+  background-image: url(../img/phone.png);
+}
+footer .foot_inner ul .mail {
+  background-image: url(../img/mail.png);
+}
+
 footer .foot_inner ul:last-child {
   margin: 0;
 }

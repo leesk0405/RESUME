@@ -325,15 +325,14 @@ header nav .gnb li:last-child {
   white-space: nowrap;
   font-weight: 500;
   padding-bottom: 6px;
-  /* position: relative;
-  z-index: 12; */
 }
 .row4 .con .item li img {
   width: 100%;
   transition: all .3s;
 }
 .row4 .con .item li:hover img {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  box-shadow: rgba(0,0,0,0.3);
 }
 
 .viewMore{

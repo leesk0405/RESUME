@@ -316,6 +316,7 @@ header nav .gnb li:last-child {
   break-inside: avoid;
   margin-bottom: 20px;
   cursor: pointer;
+  overflow: hidden;
 }
 .row4 .con .item li p{
   text-align: center;
@@ -324,13 +325,15 @@ header nav .gnb li:last-child {
   white-space: nowrap;
   font-weight: 500;
   padding-bottom: 6px;
+  /* position: relative;
+  z-index: 12; */
 }
-.row4 .con .item li img{
+.row4 .con .item li img {
   width: 100%;
-  transition: all .2s;
+  transition: all .3s;
 }
 .row4 .con .item li:hover img {
-  box-shadow: 0 0 6px rgba(0,0,0,.3);
+  transform: scale(1.1);
 }
 
 .viewMore{

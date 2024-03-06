@@ -61,4 +61,30 @@ $(".viewMore").on("click", function() {
 		// `문자열 표현o 표현식 표현에 유용함. 줄바꿈 표현에 유연함`
 		// "이름 : " + userName + " 님"
 		// `이름 : ${userName} 님`s
+    var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+
+    // 이전 페이지에서 저장된 위치로 스크롤 이동
+    if (savedScrollPosition !== null) {
+        $(window).scrollTop(savedScrollPosition);
+        sessionStorage.removeItem("scrollPosition");
+    }  
+
+  $('.row3 .item').click(function(){
+      // 현재 스크롤 위치를 세션 스토리지에 저장
+      sessionStorage.setItem('scrollPosition', $(window).scrollTop());
+  
+      // 다음 페이지로 리디렉션
+    
+      const i = $(this).index();
+      if(i === 0) { 
+        window.location.href = 'https://leesk0405.github.io/JEJU_RESUME/';
+
+      }else if(i === 1){
+        window.location.href = 'https://leesk0405.github.io/KB_RESUME/';
+
+      }else {
+        window.location.href = 'https://leesk0405.github.io/BS_RESUME/';
+
+      }
+  });
 

@@ -267,7 +267,7 @@ header nav .gnb li:last-child {
   background-position: center;
   /* backdrop-filter: brightness(0.5); */
 }
-.row3 .con .item .pic a {
+.row3 .con .item .pic button {
   display: block;
   width: 100%;
   height: 100%;

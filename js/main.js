@@ -84,7 +84,6 @@ $(".viewMore").on("click", function() {
 
       }else {
         window.location.href = 'https://leesk0405.github.io/BS_RESUME/';
-
       }
   });
 

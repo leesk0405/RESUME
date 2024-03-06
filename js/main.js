@@ -69,7 +69,7 @@ $(".viewMore").on("click", function() {
         sessionStorage.removeItem("scrollPosition");
     }  
 
-  $('.row3 .item').click(function(){
+  $('.row3 .con .item').click(function(){
       // 현재 스크롤 위치를 세션 스토리지에 저장
       sessionStorage.setItem('scrollPosition', $(window).scrollTop());
   
@@ -82,7 +82,7 @@ $(".viewMore").on("click", function() {
       }else if(i === 1){
         window.location.href = 'https://leesk0405.github.io/KB_RESUME/';
 
-      }else {
+      }else if(i === 2) {
         window.location.href = 'https://leesk0405.github.io/BS_RESUME/';
       }
   });

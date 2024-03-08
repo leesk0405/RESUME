@@ -28,9 +28,6 @@ $('.row2 .con .item').click(function(){
     let i = $(this).index();
     $('.pop').eq(i).show().siblings().hide();
 });
-$('.pop .head button').click(function(){
-  $('.pop').hide();
-});
 
 $(".row4 li").on("click", function() {
   $(".viewMore").css("display", "flex");
@@ -59,6 +56,34 @@ $(".viewMore").on("click", function() {
 		// 	// event capturing을 방지
 		// });
 
+
+$('.row2 .con .item').on("click",function(){
+  $('.con_pop, .pop').css("display","block");
+  let url = $(this).find("img").attr("src");
+  let alt = $(this).find("img").attr("alt");
+  let tit = $(this).find(".tit").text();
+  let url2 = $('.con_pop').find("img").attr("src");
+  let alt2 =  $('.con_pop').find("img").attr("alt");
+  let desc = $(this).find(".info").text();
+
+  const innerComp = `
+  <div class="head">
+    <span>${tit}</span>
+    <button><img src="${url2}" alt="${alt2}"></button>
+  </div>
+  <div class="pic"><img src="${url}" alt="${alt}"></div>
+  <p class="info">${desc}</p>`
+
+  $(".con_pop .pop").html(innerComp);
+
+  $('.con_pop').on("click",function(){
+    $(this).css('display','none');
+  });
+  $('.pop').find("button").click(function(){
+    $('.pop').hide();
+  });
+  
+});
 		// `` => 템플릿리터럴
 		// `문자열 표현o 표현식 표현에 유용함. 줄바꿈 표현에 유연함`
 		// "이름 : " + userName + " 님"

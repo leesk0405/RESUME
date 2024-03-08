@@ -205,7 +205,10 @@
   }
  
   .pop {
-    width: 500px;
+    width: 700px;
+  }
+  .pop .pic img {
+    width: 80%;
   }
   footer .foot_inner {
     padding: 0;

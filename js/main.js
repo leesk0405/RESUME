@@ -64,7 +64,7 @@ $('.row2 .con .item').on("click",function(){
   let tit = $(this).find(".tit").text();
   let url2 = $('.con_pop').find("img").attr("src");
   let alt2 =  $('.con_pop').find("img").attr("alt");
-  let desc = $(this).find(".info").text();
+  let desc = $(this).find(".info").html();
 
   const innerComp = `
   <div class="head">

@@ -203,6 +203,9 @@
     font-size: 20px;
     font-weight: 700;
   }
+.viewMore .wrap .tit {
+  font-size: 36px;
+}
  
   .pop {
     width: 500px;

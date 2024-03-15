@@ -42,7 +42,7 @@ header .nav_btn {
 } */
 header .nav_btn span {
   display: block;
-  width: 30px;
+  width: 28px;
   height: 3px;
   background-color: #333;
   border-radius: 5px;

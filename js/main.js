@@ -51,10 +51,10 @@ $(".row4 li").on("click", function() {
 $(".viewMore").on("click", function() {
   $(this).css('display', "none");
 });
-		// $(".viewMore .wrap").on("click", function(e) {
-		// 	e.stopPropagation();
-		// 	// event capturing을 방지
-		// });
+		$(".viewMore .wrap").on("click", function(e) {
+			e.stopPropagation();
+			// event capturing을 방지
+		});
 
 
 $('.row2 .con .item').on("click",function(){
@@ -79,8 +79,13 @@ $('.row2 .con .item').on("click",function(){
   $('.con_pop').on("click",function(){
     $(this).css('display','none');
   });
+  $(".con_pop .pop").on("click", function(e) {
+    e.stopPropagation();
+    // event capturing을 방지
+  });
+
   $('.pop').find("button").click(function(){
-    $('.pop').hide();
+    $('.con_pop ,.pop').hide();
   });
   
 });

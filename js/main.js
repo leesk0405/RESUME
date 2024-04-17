@@ -1,7 +1,6 @@
 
 
 $('header .nav_btn').click(function(){
-  // $('nav').is(':hidden') ? $('nav').show() : $('nav').hide();
   $('header').toggleClass('active');
   $('header .nav_btn').toggleClass('active');
 });
@@ -14,15 +13,9 @@ $('nav .gnb li').on("click",function(){
   $('html,body').animate({
     scrollTop: off - 50
   },300);
-  // $('nav').addClass('active');
   $('header').removeClass('active');
 });
 
-// $('.item .box').click(function(){
-//   $(this).parent('.item').toggleClass('active');
-//   $('.item .type').show();
-//   $(this).parent('.item').childern('.type').attr('data-aos', 'flip-up');
-// })
 $('.row2 .con .item').click(function(){
     let i = $(this).index();
     $('.pop').eq(i).show().siblings().hide();

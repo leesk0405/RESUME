@@ -85,7 +85,7 @@ $('.row2 .con .item').on("click",function(){
 		// `문자열 표현o 표현식 표현에 유용함. 줄바꿈 표현에 유연함`
 		// "이름 : " + userName + " 님"
 		// `이름 : ${userName} 님`s
-    var savedScrollPosition = sessionStorage.getItem('scrollPosition');
+    let savedScrollPosition = sessionStorage.getItem('scrollPosition');
 
     // 이전 페이지에서 저장된 위치로 스크롤 이동
     if (savedScrollPosition !== null) {
